@@ -1,3 +1,13 @@
+<div class="wrap-status">
+    <p-tag value="Primary" />
+    <p-tag severity="secondary" value="Secondary" />
+    <p-tag severity="success" value="Success" />
+    <p-tag severity="info" value="Info" />
+    <p-tag severity="warn" value="Warn" />
+    <p-tag severity="danger" value="Danger" />
+    <p-tag severity="contrast" value="Contrast" />
+</div>
+
 <div class="wrap-custom-table">
     <div class="card">
         <p-table #dt [value]="products" (sortFunction)="customSort($event)" [customSort]="false"
@@ -21,7 +31,9 @@
             <ng-template #body let-product>
                 <tr>
                     <td>{{ product.code }}</td>
-                    <td>{{ product.name }}</td>
+                    <td>
+                        <span class="hyperLink">{{ product.name }}</span>
+                    </td>
                     <td>{{ product.category }}</td>
                     <td>{{ product.quantity }}</td>
                 </tr>

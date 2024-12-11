@@ -1,12 +1,14 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TableModule } from 'primeng/table';
+
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
+
+import { TableModule } from 'primeng/table';
+import { Tag } from 'primeng/tag';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import Aura from '@primeng/themes/aura';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TableModule
+
+    TableModule,
+    Tag
 
   ],
   providers: [
