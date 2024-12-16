@@ -9,6 +9,11 @@ import Aura from '@primeng/themes/aura';
 
 import { TableModule } from 'primeng/table';
 import { Tag } from 'primeng/tag';
+// import { GridModule } from 'primeng/grid';
+import { ConfirmationService, MessageService } from 'primeng/api';
+import { ConfirmDialog } from 'primeng/confirmdialog';
+import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,10 @@ import { Tag } from 'primeng/tag';
     AppRoutingModule,
 
     TableModule,
-    Tag
+    Tag,
+    ConfirmDialog,
+    ToastModule,
+    ButtonModule
 
   ],
   providers: [
@@ -28,7 +36,7 @@ import { Tag } from 'primeng/tag';
       theme: {
         preset: Aura
       }
-    })],
+    }), ConfirmationService, MessageService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })

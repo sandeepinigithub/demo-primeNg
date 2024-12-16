@@ -41,3 +41,32 @@
         </p-table>
     </div>
 </div>
+
+
+<div class="wrap-page-divide">
+
+    <p-grid>
+        <p-col [size]="12" [sizeXs]="12" [sizeSm]="6" [sizeMd]="4" [sizeLg]="3">
+          <div class="content-box">Column 1</div>
+        </p-col>
+        <p-col [size]="12" [sizeXs]="12" [sizeSm]="6" [sizeMd]="4" [sizeLg]="3">
+          <div class="content-box">Column 2</div>
+        </p-col>
+        <p-col [size]="12" [sizeXs]="12" [sizeSm]="6" [sizeMd]="4" [sizeLg]="3">
+          <div class="content-box">Column 3</div>
+        </p-col>
+        <p-col [size]="12" [sizeXs]="12" [sizeSm]="6" [sizeMd]="4" [sizeLg]="3">
+          <div class="content-box">Column 4</div>
+        </p-col>
+      </p-grid>
+
+</div>
+
+
+
+<div class="card flex justify-center gap-2">
+    <p-toast />
+    <p-confirmdialog />
+    <p-button (click)="confirm1($event)" label="Save" [outlined]="true" />
+    <p-button (click)="confirm2($event)" label="Delete" severity="danger" [outlined]="true" />
+</div>
